@@ -8,7 +8,7 @@ Student Number: 109601003
 
 import math
 
-def calculate_probability(x, lambda_value):
+def calculate_probability(x, lambda_value) -> float:
     e_to_the_minus_lambda = math.exp(-lambda_value)
     
     lambda_power_x = lambda_value ** x
@@ -19,7 +19,7 @@ def calculate_probability(x, lambda_value):
     
     return probability
 
-def main():
+def main() -> None:
     lambda_value = 0.26
 
     for x in range(1, 7):
