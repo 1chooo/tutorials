@@ -1,9 +1,9 @@
 # Week 02 - 2023-0929
 
 ### 設置開發環境
-- [ ] 安裝 Python
-- [ ] 安裝 Spyder
-- [ ] 確認可以執行
+- [x] 安裝 Python
+- [x] 安裝 Spyder
+- [x] 確認可以執行
 
 ### 複習上週內容
 
@@ -121,7 +121,9 @@ else:
 ```
 
 ### 處理小數點
-今天我們有一個串小數，我們今天要無條件取小數點第二位，
+
+#### `format`
+我們如果要透過四捨五入的方式取到小數點後第二位我們可以透過 `format` 的方式 `print` 出來以取得我們想要的數值
 ```py
 probability = 0.123456789
 
@@ -130,9 +132,8 @@ print(f'{probability:.2f}')     # 0.12
 print('%.2f' % probability)     # 0.12
 ```
 
-#### 四捨五入
-我們如果要透過四捨五入的方式取到小數點後第二位我們可以透過 `round()` 來取得我們想要的數值
-
+#### `round()`
+我們如果要透過四捨五入的方式取到小數點後第二位我們可以透過 `round()` 的方式來取得我們想要的數值。
 ```py
 probability = 0.123456789
 print(round(probability, 2))   # 0.12
@@ -140,6 +141,16 @@ print(round(probability, 2))   # 0.12
 
 ```py
 round(數值, 小數點後第幾位)
+```
+
+#### 透過型別轉換
+另外我們也可以透過先前學習到的型別轉換先轉換成 `str`，再透過對 `str` 的處理轉換成 `float` 因而得到我們想要的數值。
+```py
+probability = 0.123456789
+probability_str = str(probability)
+probability_str = probability_str[:4]
+probability = float(probability_str)
+print(probability)      # 0.12
 ```
 
 ### 程式輸入
