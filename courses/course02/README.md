@@ -223,3 +223,15 @@ print(b.split())        # ['Hello,', 'World']
 print(b.split(','))     # ['Hello', ' World']
 print(b.split(',', 1))  # ['Hello', ' World']
 ```
+
+<div align="center">
+    <p>
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course01" target="_blank"><b>👨🏻‍💻 第一週課程</b></a> |
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course03" target="_blank"><b>👨🏻‍💻 第三週課程</b></a>
+    </p>
+</div>
+
+## License
+
+All of these teaching materials are owned by [Hugo ChunHo Lin](https://github.com/1chooo).   
+These materials are intended for tutoring purposes. They are open-source to foster a more vibrant Python learning community. We warmly welcome fellow enthusiasts interested in Python to use them. If you use a substantial portion of the source code, please include a link back to this repository.

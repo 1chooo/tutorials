@@ -130,3 +130,14 @@ print(apple_price)
 a, b, c = max(map(int, input().split()))
 print(map(a, b, c))
 ```
+
+<div align="center">
+    <p>
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course02" target="_blank"><b>👨🏻‍💻 第二週課程</b></a>
+    </p>
+</div>
+
+## License
+
+All of these teaching materials are owned by [Hugo ChunHo Lin](https://github.com/1chooo).   
+These materials are intended for tutoring purposes. They are open-source to foster a more vibrant Python learning community. We warmly welcome fellow enthusiasts interested in Python to use them. If you use a substantial portion of the source code, please include a link back to this repository.
