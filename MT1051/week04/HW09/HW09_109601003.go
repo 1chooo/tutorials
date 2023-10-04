@@ -5,14 +5,26 @@
 
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
+
+type FunctionCalculator struct{}
+
+func (f *FunctionCalculator) f(x float64) float64 {
+	return 4.6 * x * x - 6.5 * x + 13.4
+}
+
+func (f *FunctionCalculator) calculateAndPrint(start, end int) {
+	for i := start; i <= end; i++ {
+		x := float64(i) + 0.4
+		result := f.f(x)
+		fmt.Printf("f(%.1f) = %.2f\n", x, result)
+	}
+}
 
 func main() {
-	sum := 0
-
-	for i := 1; i < 100; i += 2 {
-		sum += i
-	}
-
-	fmt.Println(sum)
+	calculator := FunctionCalculator{}
+	calculator.calculateAndPrint(9, 20)
 }
+
