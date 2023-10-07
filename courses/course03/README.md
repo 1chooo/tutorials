@@ -145,8 +145,200 @@ ut labore et dolore magna aliqua."""
 print(a)
 ```
 
-### `print` 函式的使用
+### `print()` 函式的使用
+在 Python 中我們如果想要輸出一個 `string` 我們會透過 `print()` 這個函式來達成，其中在 Python 中 `print()` 會自動換行，如果我們不想要換行，我們可以透過 `end` 這個參數來達成。
+
+- `print(*objects, end='\n')`
+- 可以傳入零或多個參數，用逗點分隔
+- 預設 `print()` 會換行，可用 `end` 參數來改變
+
+```py
+print("Hello")
+print("World")
+```
+
+```py
+print("Hello", end=" ")
+print("World")
+
+# 同理
+print("Hello", "World")
+```
+
+#### `print` 補充 `sep` 間隔
+其實 `print` 函式預設的間隔是一個空格，如果我們想要自行調整我們可以去更改 `sep` 的參數
+```py
+print("Hello", "World", sep="---")
+```
+
+### 格式化
+
+當我們今天想要讓程式的輸出變得更為美觀，我們常會使用格式化的技巧
+
+#### f-字串 (`f-Strings`)
+
+```py
+name = "Hugo"
+age = 18
+print(f"Hello, my name is {name} and I am {age} years old.")
+```
+#### 文字格式化方法 (`str.format()`)
+```py
+name = "Hugo"
+age = 18
+print("Hello, my name is {} and I am {} years old.".format(name, age))
+```
+
+#### 文字格式化運算子 (`% Operator`)
+```py
+name = "Hugo"
+age = 18
+print("Hello, my name is %s and I am %d years old." % (name, age))
+```
+
 
 ### `list` 串列操作
+在 Python 中如果我們想要輸入 `list` 我們會透過 `[]` 一個中括號的方式，其中在 Python 中 `[]` 跟 `()` 的效力是相同的
 
-### `for` 迴圈使用
+> [!IMPORTANT]
+> 左右兩邊的中括號要一模一樣  
+> 1. 合格：`[1, 2, 3]`
+> 2. 合格：`(1, 2, 3)`
+> 3. 不合格：`[1, 2, 3)`
+> 4. 不合格：`(1, 2, 3]`
+
+#### 新增元素到 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print(fruits)       # ['apple', 'banana', 'cherry', 'orange']
+```
+
+#### 移除元素到 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print(fruits)       # ['apple', 'cherry']
+```
+#### 插入元素到 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1, "orange")
+print(fruits)       # ['apple', 'orange', 'banana', 'cherry']
+```
+#### 修改元素值
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print(fruits)       # ['apple', 'orange', 'cherry']
+```
+#### 組合及替換多個 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+cars = ["Ford", "BMW", "Volvo"]
+fruits.extend(cars)
+print(fruits)       # ['apple', 'banana', 'cherry', 'Ford', 'BMW', 'Volvo']
+```
+#### 刪除元素
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.pop(1)
+print(fruits)       # ['apple', 'cherry']
+```
+#### 刪除 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+del fruits
+print(fruits)       # NameError: name 'fruits' is not defined
+```
+#### 清空 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.clear()
+print(fruits)       # []
+```
+#### 複製 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+x = fruits.copy()
+print(x)            # ['apple', 'banana', 'cherry']
+```
+#### 反轉 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.reverse()
+print(fruits)       # ['cherry', 'banana', 'apple']
+```
+#### 排序 `list`
+```py
+fruits = ["apple", "banana", "cherry"]
+fruits.sort()
+print(fruits)       # ['apple', 'banana', 'cherry']
+```
+#### 串列的長度
+```py
+fruits = ["apple", "banana", "cherry"]
+print(len(fruits))  # 3
+```
+#### 串列的索引
+```py
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])    # apple
+```
+#### 串列的切片
+```py
+fruits = ["apple", "banana", "cherry"]
+print(fruits[1:3])  # ['banana', 'cherry']
+```
+#### 串列的檢查
+```py
+fruits = ["apple", "banana", "cherry"]
+if "apple" in fruits:
+    print("Yes, 'apple' is in the fruits list")
+```
+#### 串列的迴圈
+```py
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+```
+#### 串列的迴圈 (索引)
+```py
+fruits = ["apple", "banana", "cherry"]
+for i in range(len(fruits)):
+    print(fruits[i])
+```
+#### 串列的迴圈 (索引)
+```py
+fruits = ["apple", "banana", "cherry"]
+i = 0
+while i < len(fruits):
+    print(fruits[i])
+    i += 1
+```
+
+#### 課堂小練習
+練習操作 `string` 並且搭配 `list` 的概念，給定一個字串 `Hello World!`，請試著做輸出 `World Hello` 以及 `Hello`
+
+> [!Note]  
+> 利用 `split` 的概念以及串列的切片實作
+
+```py
+word = "Hello World"
+# 開始你的努力吧！
+# ...
+# ...
+```
+
+**參考答案**  
+```py
+word = "Hello World"
+
+
+```
+
+
+## License
+
+All of these teaching materials are owned by [Hugo ChunHo Lin](https://github.com/1chooo).   
+These materials are intended for tutoring purposes. They are open-source to foster a more vibrant Python learning community. We warmly welcome fellow enthusiasts interested in Python to use them. If you use a substantial portion of the source code, please include a link back to this repository.
