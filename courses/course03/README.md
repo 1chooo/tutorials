@@ -1,8 +1,8 @@
 # Week03 - 2023-1008
 
 ### 上週回顧
-- [ ] `float()` 取位數補充
-- [ ] 練習 "d065"
+- [x] `float()` 取位數補充
+- [x] 練習 "d065"
 
 ### `float()` 取位數補充
 
@@ -37,7 +37,7 @@ print(int(probability * 100) / 100)
 **Output**  
 輸出這三個整數中最大的那一個。
 | Sample | Input    | Output |
-| ------ | -------- | ------ |
+| :------: | :--------: | :------: |
 | # 1    | 35 26 48 | 48     |
 | # 2    | 37 59 59 | 59     |
 
@@ -95,7 +95,7 @@ print(word[0])      # H
 print(word[1])      # e
 
 for i in word:
-    print(x)
+    print(i)
 ```
 
 #### 字串的長度
@@ -213,6 +213,10 @@ fruits = ["apple", "banana", "cherry"]
 fruits.append("orange")
 print(fruits)       # ['apple', 'banana', 'cherry', 'orange']
 ```
+
+--- [本週上課內容分隔線] ---
+
+---
 
 #### 移除元素到 `list`
 ```py
@@ -334,8 +338,27 @@ word = "Hello World"
 ```py
 word = "Hello World"
 
+# 解法一
+word = "Hello World"
+word = word.split(" ")
 
+print("解法一: ")
+print(word[1], word[0])
+print(word[0])
+
+# 解法二
+word = "Hello World"
+print("解法二: ")
+print(word[6: 11], word[0: 6])
+print(word[0: 6])
 ```
+
+<div align="center">
+    <p>
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course02" target="_blank"><b>👨🏻‍💻 第二週課程</b></a> |
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course04" target="_blank"><b>👨🏻‍💻 第四週課程</b></a>
+    </p>
+</div>
 
 
 ## License
