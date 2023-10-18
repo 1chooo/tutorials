@@ -208,6 +208,10 @@ for i in range(a, b + 1):
 print(ans)
 ```
 
+--- [本週上課內容分隔線] ---
+
+---
+
 ### [`c418` Bert的三角形 (1)](https://zerojudge.tw/ShowProblem?problemid=c418)
 Bert 想要一個 n 層的三角形，第 i 層就要有 i 個 " * "  
 請你寫個程式幫幫可憐的 Bert ~~
