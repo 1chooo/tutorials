@@ -29,11 +29,11 @@ for i in prices:
 
 for i in range(0, 5, 1):
     print(i)
+# 0
 # 1
 # 2
 # 3
 # 4
-# 5
 
 for i in range(0, 5, 1):
     print(prices[i])
@@ -45,6 +45,13 @@ for i in range(0, 5, 1):
 
 for i in range(0, 5, 2):
     print(prices[i])
+# 100
+# 300
+# 500
+
+for i in range(5):
+    if i % 2 == 0:
+        print(prices[i])
 # 100
 # 300
 # 500
