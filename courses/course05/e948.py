@@ -1,6 +1,6 @@
-times = int(input())
+N = int(input())
 
-for i in range(times):
+for i in range(N):
     G, A, H, W = map(int, input().split())
 
     if G == 1:
