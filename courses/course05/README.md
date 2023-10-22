@@ -180,9 +180,9 @@ Bert 想要一個 n 層的三角形，第 i 層就要有 i 個 " * "
 #### [Python 解]
 
 ```py
-layer = int(input())
+n = int(input())
 
-for i in range(1, layer + 1):
+for i in range(1, n + 1):
     print('*' * i)
 ```
 
