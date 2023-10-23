@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Date: 2023/10/23
+Ultimate Code Game
+Author: 林群賀
+Student Number: 109601003
+"""
+
 import random
 
 # 生成一個 4 位數的秘密數字

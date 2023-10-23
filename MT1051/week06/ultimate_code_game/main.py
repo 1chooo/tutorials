@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Date: 2023/10/23
-HW: 15
+Ultimate Code Game
 Author: 林群賀
 Student Number: 109601003
 """
