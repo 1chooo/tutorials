@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Date: 2023/10/16
-HW: 12
+HW: 13
 Author: 林群賀
 Student Number: 109601003
 """
