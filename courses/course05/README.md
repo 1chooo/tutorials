@@ -180,10 +180,24 @@ Bert 想要一個 n 層的三角形，第 i 層就要有 i 個 " * "
 #### [Python 解]
 
 ```py
+# method 1:
 n = int(input())
 
 for i in range(1, n + 1):
     print('*' * i)
+
+# method 2:
+n = int(input())
+
+for i in range(0, n):
+    print('*' * (i + 1))
+
+# method 3:
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(i):
+        print('*', end='')
+    print()
 ```
 
 ### [`c419` Bert的三角形 (2)](https://zerojudge.tw/ShowProblem?problemid=c419)
@@ -199,11 +213,20 @@ Bert 又想要另外一種 n 層的三角形，定義如下:
 #### [Python 解]
 
 ```py
-layer = int(input())
+# method 1:
+n = int(input())
 
-for i in range(1, layer + 1):
-    print('_' * (layer - i) + '*' * i)
+for i in range(1, n + 1):
+    print('_' * (n - i) + '*' * i)
+
+# method 2:
+for i in range(0, n):
+    print('_' * (n - i - 1) + '*' * (i + 1))
 ```
+
+--- [本週上課內容分隔線] ---
+
+---
 
 ### [`c420` Bert的三角形 (3)](https://zerojudge.tw/ShowProblem?problemid=c420)
 Bert 有天騎著海豚到了埃及，看到了金字塔不經意的發出『 哇～～ 』現在 Bert 想請你用程式記下金字塔的樣子～～現在有一種 n 層的三金字塔，定義如下:

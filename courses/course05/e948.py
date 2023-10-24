@@ -9,3 +9,10 @@ for i in range(N):
         BMR = 9.6 * W + 1.8 * H - 4.7 * A + 655
 
     print(f"{BMR:.2f}")
+
+
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(i):
+        print('*', end='')
+    print()
