@@ -106,6 +106,17 @@ print(sum(a))
 > Hint ：
 > 可以使用 `<algorithm>` 函式庫裡面的 reverse 把陣列內容反轉後輸出；也可以直接從陣列的尾端跑到首端逐一輸出；也歡迎高手直接調整 stdin 的存取位置來解題！
 
+#### [Python 解]
+```py
+n = int(input())
+a = [int(x) for x in input().split()]
+# a = list(map(int, input().split()))
+
+for i in a[::-1]:
+    print(i, end=" ")
+
+print()
+```
 
 ### [a104. 排序](https://zerojudge.tw/ShowProblem?problemid=a104)
 
@@ -114,13 +125,28 @@ print(sum(a))
 | Sample | Input | Output |
 | :------: | :--------: | :------: |
 | 說明 | 有多筆測資以EOF為結束<br>第一行有一個正整數n(1<=n<=1000)，代表有幾個數字要請你幫忙排<br>第二行有n個可以用int儲存的正整數 | 輸出n個已由小到大排序好的正整數 |
-| # 1 | 5<br>1 2 3 4 5 | 5 4 3 2 1 |
-| # 2 | 4<br>100 250 -200 450 | 450 -200 250 100 |
+| # 1 | 6<br>7 9 0 4 1 8<br>8<br>1 9 9 0 0 9 2 8 | 0 1 4 7 8 9<br>0 0 1 2 8 9 9 9 |
+
+#### [Python 解]
+
+```py
+while True:
+    try:
+        n = int(input())
+        a = [int(x) for x in input().split()]
+        a.sort()
+        print(*a)
+    except EOFError:
+        break
+```
+
+如果寫 `print(a)` 將會 print 出整個 list 在 python 會把 `[]` 以及
+ `,` 印出來，但是我們如果只要 print 出 list 內容，可以使用 `*` 來 unpack list 內容，如此一來就可以 print 出 list 內容。
 
 <div align="center">
     <p>
         <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course05" target="_blank"><b>👨🏻‍💻 第五週課程</b></a> |
-        <!-- <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course06" target="_blank"><b>👨🏻‍💻 第六週課程</b></a> -->
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course07" target="_blank"><b>👨🏻‍💻 第七週課程</b></a>
     </p>
 </div>
 

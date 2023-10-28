@@ -1,3 +1,10 @@
+"""
+Created Date: 2023-10-28
+Author: @1chooo (Hugo ChunHo Lin)
+Problem link: https://zerojudge.tw/ShowProblem?problemid=b139
+Status: AC
+"""
+
 # L, M = map(int, input().split())
 # tree_positions = [1] * (L + 1)      # 0 ~ L
 
