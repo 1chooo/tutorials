@@ -1,5 +1,15 @@
 # Week06 - 2023-1029
 
+### 本週目標
+- [ ] [`c420` Bert的三角形 (3)](https://zerojudge.tw/ShowProblem?problemid=c420)
+- [ ] [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
+輸入任意數字，並將其數字全部倒轉
+- [ ] [b139. NOIP2005 2.校门外的树](https://zerojudge.tw/ShowProblem?problemid=b139)
+- [ ] [f345. 新手練習題—陣列](https://zerojudge.tw/ShowProblem?problemid=f345)
+- [ ] [a104. 排序](https://zerojudge.tw/ShowProblem?problemid=a104)
+- [ ] [d583. 幼稚的企鵝](https://zerojudge.tw/ShowProblem?problemid=d583)
+- [ ] [d074. 電腦教室](https://zerojudge.tw/ShowProblem?problemid=d074)
+
 ### [`c420` Bert的三角形 (3)](https://zerojudge.tw/ShowProblem?problemid=c420)
 Bert 有天騎著海豚到了埃及，看到了金字塔不經意的發出『 哇～～ 』現在 Bert 想請你用程式記下金字塔的樣子～～現在有一種 n 層的三金字塔，定義如下:
 
