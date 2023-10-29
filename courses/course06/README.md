@@ -3,7 +3,6 @@
 ### 本週目標
 - [ ] [`c420` Bert的三角形 (3)](https://zerojudge.tw/ShowProblem?problemid=c420)
 - [ ] [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
-輸入任意數字，並將其數字全部倒轉
 - [ ] [b139. NOIP2005 2.校门外的树](https://zerojudge.tw/ShowProblem?problemid=b139)
 - [ ] [f345. 新手練習題—陣列](https://zerojudge.tw/ShowProblem?problemid=f345)
 - [ ] [a104. 排序](https://zerojudge.tw/ShowProblem?problemid=a104)
