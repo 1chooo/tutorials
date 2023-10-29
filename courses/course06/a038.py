@@ -49,3 +49,8 @@ else:
     print()
 
 print(int(''.join(reversed(input()))))
+
+a = list(input())
+a.reverse()
+ans = ''.join(a)
+print(int(ans))

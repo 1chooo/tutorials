@@ -66,6 +66,15 @@ else:
             break
 ```
 
+#### [Python 解] (學校老師解)
+
+```py
+a = list(input())
+a.reverse()
+ans = ''.join(a)
+print(int(ans))
+```
+
 ### [b139. NOIP2005 2.校门外的树](https://zerojudge.tw/ShowProblem?problemid=b139)
 
 某校大门外长度为L的马路上有一排树，每两棵相邻的树之间的间隔都是1米。我们可以把马路看成一个数轴，马路的一端在数轴0的位置，另一端在L的位置；数轴上的每个整数点，即0，1，2，……，L，都种有一棵树。
