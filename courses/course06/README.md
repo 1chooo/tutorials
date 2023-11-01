@@ -98,6 +98,10 @@ for i in range(m):
 print(sum(a))
 ```
 
+--- [本週上課內容分隔線] ---
+
+---
+
 ### [f345. 新手練習題—陣列](https://zerojudge.tw/ShowProblem?problemid=f345)
 
 本題是給新手練習陣列使用的（其實是出給學弟妹練習陣列用的）。  

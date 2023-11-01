@@ -50,6 +50,7 @@ else:
 
 print(int(''.join(reversed(input()))))
 
+# method 2
 a = list(input())
 a.reverse()
 ans = ''.join(a)

@@ -24,3 +24,5 @@ for i in range(m):
         a[j] = 0
 
 print(sum(a))
+
+
