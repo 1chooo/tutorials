@@ -115,7 +115,6 @@ for i in range(5):
 # 0
 # 1
 # 2
-# 4
 ```
 
 #### `continue` 的使用
@@ -128,6 +127,7 @@ for i in range(5):
 # 0
 # 1
 # 2
+# 4
 ```
 
 ### [`c315` I, ROBOT 前傳](https://zerojudge.tw/ShowProblem?problemid=c315)
