@@ -72,9 +72,6 @@ for i in range(5):
 # 1
 # 2
 # 4
-# 0
-# 1
-# 2
 ```
 
 #### EOF 實作
@@ -112,8 +109,21 @@ while True:
         break
 ```
 
-如果寫 `print(a)` 將會 print 出整個 list 在 python 會把 `[]` 以及
- `,` 印出來，但是我們如果只要 print 出 list 內容，可以使用 `*` 來 unpack list 內容，如此一來就可以 print 出 list 內容。
+如果寫 `print(a)` 將會 print 出整個 list 在 python 會把 `[]` 以及 `,` 印出來，但是我們如果只要 print 出 list 內容，可以使用 `*` 來 unpack list 內容，如此一來就可以 print 出 list 內容。
+
+
+#### list comprehension
+
+`[int(x) for x in input().split()]` 這行是一個 list comprehension，可以將輸入的字串轉成 list，並且將 list 內容轉成 int。
+
+```py
+# 以下為 list comprehension 的範例
+a = [int(x) for x in input().split()]
+print(a)
+# input: 1 2 3 4 5
+# output: [1, 2, 3, 4, 5]
+```
+
 
 
 ### [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
@@ -136,6 +146,25 @@ a = list(input())
 a.reverse()
 ans = ''.join(a)
 print(int(ans))
+```
+
+#### [小實驗]
+```py
+# 本測試可發現若 list 結尾有 0，則 reverse 後會消失
+
+a = ['1', '2', '3', '4', '0', '0']
+a.reverse()
+ans = ''.join(a)
+print(int(ans))
+# 4321
+
+```py
+
+# 我們也可以發現，若是字串，倒轉後 0 也會消失
+b = '123400'
+b = b[::-1]
+print(int(b))
+# 4321
 ```
 
 <div align="center">
