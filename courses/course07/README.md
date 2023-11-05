@@ -24,6 +24,15 @@ while i < 5:
     i += 1
 ```
 
+```py
+i = 0
+while True:
+    if i == 5:
+        break
+    print(i)
+    i += 1
+```
+
 #### `while` 迴圈的語法
 ```py
 while 條件:
@@ -124,7 +133,9 @@ print(a)
 # output: [1, 2, 3, 4, 5]
 ```
 
+--- [本週上課內容分隔線] ---
 
+---
 
 ### [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
 
