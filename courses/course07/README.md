@@ -181,7 +181,7 @@ print(int(b))
 <div align="center">
     <p>
         <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course06" target="_blank"><b>👨🏻‍💻 第六週課程</b></a> |
-        <!-- <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course07" target="_blank"><b>👨🏻‍💻 第七週課程</b></a> -->
+        <a href="https://github.com/1chooo/23-fall-tutor/tree/main/courses/course08" target="_blank"><b>👨🏻‍💻 第八週課程</b></a>
     </p>
 </div>
 
