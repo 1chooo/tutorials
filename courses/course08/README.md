@@ -8,10 +8,13 @@
   - [ ] `count()` 用法介紹
   - [ ] `index()` 用法介紹
 - [ ] [c290. APCS 2017-0304-1秘密差](https://zerojudge.tw/ShowProblem?problemid=c290)
+- [ ] [a149. 乘乘樂](https://zerojudge.tw/ShowProblem?problemid=a149)
 - [ ] [a022. 迴文](https://zerojudge.tw/ShowProblem?problemid=a022)
   - [ ] `reverse()` 用法介紹
   - [ ] `copy()` 用法介紹
-- [ ] 
+- [ ] [煲仔飯 (Clay Pot Rice)](https://tpmso.org/toi/wp-content/uploads/question/202310/ClayPotRice.pdf) [^1]
+- [ ] [烤肉 (BBQ)](https://tpmso.org/toi/wp-content/uploads/question/202310/BBQ.pdf) [^1]
+- [ ] [超市排隊 (Supermarket)](https://tpmso.org/toi/wp-content/uploads/question/202310/Supermarket.pdf) [^1]
 
 
 ### [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
