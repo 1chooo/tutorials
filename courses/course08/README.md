@@ -4,7 +4,10 @@
 - [ ] [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
   - [ ] `reverse()` 用法介紹
   - [ ] `join()` 用法介紹
-
+- [ ] [j605. 1. 程式考試](https://zerojudge.tw/ShowProblem?problemid=j605)
+  - [ ] `count()` 用法介紹
+  - [ ] `index()` 用法介紹
+- [ ] [c290. APCS 2017-0304-1秘密差](https://zerojudge.tw/ShowProblem?problemid=c290)
 ### [a038. 數字翻轉](https://zerojudge.tw/ShowProblem?problemid=a038)
 
 輸入任意數字，並將其數字全部倒轉
@@ -46,14 +49,6 @@ print(int(b))
 # 4321
 ```
 
-### [煲仔飯 (Clay Pot Rice)](https://tpmso.org/toi/wp-content/uploads/question/202310/ClayPotRice.pdf) [^1]
-
-### [烤肉 (BBQ)](https://tpmso.org/toi/wp-content/uploads/question/202310/BBQ.pdf) [^1]
-
-### [超市排隊 (Supermarket)](https://tpmso.org/toi/wp-content/uploads/question/202310/Supermarket.pdf) [^1]
-
-### [d587. 參貳壹真好吃](https://zerojudge.tw/ShowProblem?problemid=d587)
-
 ### [j605. 1. 程式考試](https://zerojudge.tw/ShowProblem?problemid=j605)
 
 給 n 個提交紀錄，第 i 個提交紀錄有兩個整數 ti 和 si 代表上傳時間和該次上傳的分數，若第 i 次的提交結果為嚴重錯誤，則 si 為 -1。  
@@ -77,12 +72,40 @@ for i in range(n):
     t[i] = x
     s[i] = y
 
+# 最高分 - 總提交次數 - 總嚴重錯誤次數 * 2
 ans = max(s) - n - s.count(-1) * 2
 
+# 若計算出來的分數為負數則計為 0。
 if ans < 0:
     ans = 0
 
+# 輸出總分和第一次獲得最高分的時間點。
 print(ans, t[s.index(max(s))])
+```
+
+#### `[0] * n` 用法介紹
+
+```py
+# 創建一個長度為 5 的列表，並且每個元素都是 0
+a = [0] * 5
+print(a)
+# [0, 0, 0, 0, 0]
+```
+
+#### `count()` 用法介紹
+```py
+# 計算 list 中有幾個 1
+a = [1, 2, 3, 1, 1, 1]
+print(a.count(1))
+# 4
+```
+
+#### `index()` 用法介紹
+```py
+# 找出 list 中第一個 1 的位置
+a = [1, 2, 3, 1, 1, 1]
+print(a.index(1))
+# 0
 ```
 
 ### [c290. APCS 2017-0304-1秘密差](https://zerojudge.tw/ShowProblem?problemid=c290)
@@ -104,13 +127,17 @@ print(ans, t[s.index(max(s))])
 
 #### 評分說明
 
-輸入包含若干筆測試資料，每一的執行時間限制 (time limit)均為1秒，依正確通過測資筆數給分。其中：
+輸入包含若干筆測試資料，每一的執行時間限制 (time limit)均為 1 秒，依正確通過測資筆數給分。其中：
 
-- 第 1子題組 20 分： X 一定恰好四位數 。
-- 第 2子題組 30分： X的位數不超過 9。
-- 第 3子題組 50 分： X的位數不超過 1000 。
+- 第 1 子題組 20 分： X 一定恰好四位數 。
+- 第 2 子題組 30分： X 的位數不超過 9。
+- 第 3 子題組 50 分： X 的位數不超過 1000 。
 
 #### [Python 解]
+
+利用字串長度判斷奇偶數，再分別加上 `even` 和 `odd`，最後算出 `even` 和 `odd` 的**絕對**差值。
+
+
 ```py
 s = [int(x) for x in input()]
 
@@ -145,12 +172,20 @@ for i in range(n):
         ans = 0
     else:
         ans = 1
-        while m:
-            ans *= m % 10
-            m //= 10
+        while m:            # 當 m 不為 0 時，就會一直執行
+            ans *= m % 10   # 得到個位數
+            m //= 10        # 去掉個位數
     
     print(ans)
 ```
+
+### [煲仔飯 (Clay Pot Rice)](https://tpmso.org/toi/wp-content/uploads/question/202310/ClayPotRice.pdf) [^1]
+
+### [烤肉 (BBQ)](https://tpmso.org/toi/wp-content/uploads/question/202310/BBQ.pdf) [^1]
+
+### [超市排隊 (Supermarket)](https://tpmso.org/toi/wp-content/uploads/question/202310/Supermarket.pdf) [^1]
+
+### [d587. 參貳壹真好吃](https://zerojudge.tw/ShowProblem?problemid=d587)
 
 ### [a022. 迴文](https://zerojudge.tw/ShowProblem?problemid=a022)
 

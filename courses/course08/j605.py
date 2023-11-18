@@ -14,9 +14,12 @@ for i in range(n):
     t[i] = x
     s[i] = y
 
+# 最高分 - 總提交次數 - 總嚴重錯誤次數 * 2
 ans = max(s) - n - s.count(-1) * 2
 
+# 若計算出來的分數為負數則計為 0。
 if ans < 0:
     ans = 0
 
+# 輸出總分和第一次獲得最高分的時間點。
 print(ans, t[s.index(max(s))])
