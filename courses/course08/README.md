@@ -139,13 +139,12 @@ print(a.index(1))
 輸入包含若干筆測試資料，每一的執行時間限制 (time limit)均為 1 秒，依正確通過測資筆數給分。其中：
 
 - 第 1 子題組 20 分： X 一定恰好四位數 。
-- 第 2 子題組 30分： X 的位數不超過 9。
+- 第 2 子題組 30 分： X 的位數不超過 9。
 - 第 3 子題組 50 分： X 的位數不超過 1000 。
 
 #### [Python 解]
 
 利用字串長度判斷奇偶數，再分別加上 `even` 和 `odd`，最後算出 `even` 和 `odd` 的**絕對**差值。
-
 
 ```py
 s = [int(x) for x in input()]
@@ -184,6 +183,37 @@ for i in range(n):
         while m:            # 當 m 不為 0 時，就會一直執行
             ans *= m % 10   # 得到個位數
             m //= 10        # 去掉個位數
+    
+    print(ans)
+```
+
+#### [Python 另解 1]
+
+```py
+n = int(input())
+
+for i in range(n):
+    num = [int(x) for x in list(input())]
+    ans = 1
+
+    for j in num:
+        ans *= j
+    
+    print(ans)
+```
+
+#### [Python 另解 2]
+
+```py
+n = int(input())
+
+for i in range(n):
+    num = input()
+    ans = 1
+
+    for j in range(len(num)):
+        digit = int(num[j])
+        ans *= digit
     
     print(ans)
 ```
@@ -262,6 +292,10 @@ if T < G + W + E + B:
 else:
     print(G + W + E + B)
 ```
+
+--- [本週上課內容分隔線] ---
+
+---
 
 ### [烤肉 (BBQ)](https://tpmso.org/toi/wp-content/uploads/question/202310/BBQ.pdf) [^1]
 
