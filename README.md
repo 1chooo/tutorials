@@ -1,4 +1,6 @@
-# 23-fall-tutor
+# Python 23 Fall Tutor
+
+###### tags: `Python` `Tutor` `23`, `Python 101`, `Programming 101`, `Python 23`
 
 ## Course Materials
 
@@ -11,6 +13,7 @@
 | [Week 05 - 2023-1022](https://github.com/1chooo/23-fall-tutor/tree/main/courses/course05) | `for` 迴圈, ZeroJudge 題目 |
 | [Week 06 - 2023-1029](https://github.com/1chooo/23-fall-tutor/tree/main/courses/course06) | ZeroJudge 題目 |
 | [Week 07 - 2023-1105](https://github.com/1chooo/23-fall-tutor/tree/main/courses/course07) | Python EOF, try-except, while, ZeroJudge 題目 |
+| [Week 08 - 2023-1119](https://github.com/1chooo/23-fall-tutor/tree/main/courses/course08) |  |
 
 ## License
 Released under [MIT](./LICENSE) by [Hugo ChunHo Lin](https://github.com/1chooo).
