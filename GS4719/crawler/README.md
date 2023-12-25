@@ -110,7 +110,7 @@ query_string = '''
 
 api_url = "https://api.github.com/graphql"
 github_personal_access_token = ""
-response = requests.post(
+response = requests.get(
     api_url, 
     headers={
         "Authorization": f"bearer {github_personal_access_token}"
