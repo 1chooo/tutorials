@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/linchunho/Developer/23-fall-tutor/MT1051/week04/HW11",
-      "program": "/Users/linchunho/Developer/23-fall-tutor/MT1051/week04/HW11/build/Debug/outDebug"
+      "cwd": "/Users/linchunho/Developer/23-fall-tutor/courses/course08",
+      "program": "/Users/linchunho/Developer/23-fall-tutor/courses/course08/build/Debug/outDebug"
     }
   ]
 }
