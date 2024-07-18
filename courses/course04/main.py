@@ -24,8 +24,6 @@ prices = [100, 200, 300, 400, 500]
 for i in prices:
     print(i)
 
-[0, 1, 2, 3, 4]
-
 for i in range(0, 5, 1):
     print(i)
 
